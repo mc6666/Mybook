@@ -1,0 +1,8 @@
+# Book settings
+title: 我的學習記錄
+author: Michael Chen
+logo: logo.png
+
+latex:
+  latex_documents:
+    targetname: book.tex
