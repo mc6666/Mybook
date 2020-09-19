@@ -98,26 +98,6 @@
    迴歸：Scikit-Learn 與矩陣求解的比較
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#id1">
-   二次迴歸
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#id2">
-   簡單運算
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#boston-by-matrix">
-   Boston by matrix
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#r-2">
-   R^2 公式
-  </a>
- </li>
 </ul>
 
 </nav>
@@ -209,7 +189,29 @@
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   二次迴歸
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   簡單運算
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boston-by-matrix">
+   Boston by matrix
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#r-2">
+   R^2 公式
+  </a>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -692,9 +694,9 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([-0.88320211,  1.16163806,  0.24109554,  0.79265853, -1.91921379,
-        2.58131895,  0.02156467, -2.88075618,  2.71074053, -2.05975923,
-       -2.04672941,  0.83952072, -3.70020709])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([-0.47203099,  1.0758604 , -0.02008315,  0.93648448, -1.55000644,
+        2.63442578,  0.17452955, -2.84030514,  2.50991321, -2.11501675,
+       -1.85542616,  1.13431823, -4.11867231])
 </pre></div>
 </div>
 </div>
@@ -706,7 +708,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>22.324009900990152
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>22.452475247524802
 </pre></div>
 </div>
 </div>
@@ -718,7 +720,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.758003749659582
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6634661724735491
 </pre></div>
 </div>
 </div>
@@ -731,7 +733,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>22.951553563232164
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>27.77075462726067
 </pre></div>
 </div>
 </div>
@@ -743,7 +745,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4.790777970563044
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.269796450268328
 </pre></div>
 </div>
 </div>
@@ -756,14 +758,13 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.758003749659582
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6634661724735491
 </pre></div>
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="id1">
-<h1>二次迴歸<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h2>二次迴歸<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">PolynomialFeatures</span>
@@ -818,7 +819,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.7831226580988544
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8631832916391332
 </pre></div>
 </div>
 </div>
@@ -837,7 +838,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="id2">
-<h1>簡單運算<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<h2>簡單運算<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -920,7 +921,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="boston-by-matrix">
-<h1>Boston by matrix<a class="headerlink" href="#boston-by-matrix" title="Permalink to this headline">¶</a></h1>
+<h2>Boston by matrix<a class="headerlink" href="#boston-by-matrix" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
@@ -1175,10 +1176,10 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([-7.42846337e-02,  3.53618792e-02,  4.50837182e-02,  1.18102019e+00,
-       -1.34138891e+01,  4.55811575e+00, -1.88348444e-02, -1.28458588e+00,
-        2.40425922e-01, -1.27853545e-02, -9.59873951e-01,  1.33887132e-02,
-       -4.17038339e-01,  2.76539187e+01])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([-8.88275642e-02,  4.02073843e-02, -6.33260182e-03,  3.10795581e+00,
+       -1.52570723e+01,  4.00837251e+00, -1.02513716e-02, -1.47928723e+00,
+        2.64648179e-01, -1.22285584e-02, -9.16861715e-01,  7.15857131e-03,
+       -5.21315607e-01,  3.51904141e+01])
 </pre></div>
 </div>
 </div>
@@ -1224,7 +1225,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>39.04208118230335
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>27.70000181614502
 </pre></div>
 </div>
 </div>
@@ -1237,14 +1238,14 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6.248366281061262
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.2630791193126685
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 <div class="section" id="r-2">
-<h1>R^2 公式<a class="headerlink" href="#r-2" title="Permalink to this headline">¶</a></h1>
+<h2>R^2 公式<a class="headerlink" href="#r-2" title="Permalink to this headline">¶</a></h2>
 <p>https://scikit-learn.org/stable/modules/model_evaluation.html#r2-score</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1256,8 +1257,9 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6302597780295265
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6651148600879533
 </pre></div>
+</div>
 </div>
 </div>
 </div>

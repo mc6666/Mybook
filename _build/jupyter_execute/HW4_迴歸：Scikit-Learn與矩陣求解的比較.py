@@ -50,7 +50,7 @@ mean_squared_error(y_test, lr.predict(X_test)) ** .5
 from sklearn.metrics import r2_score
 r2_score(y_test, lr.predict(X_test))
 
-# 二次迴歸
+## 二次迴歸
 
 from sklearn.preprocessing import PolynomialFeatures
 poly = PolynomialFeatures(2)
@@ -73,7 +73,7 @@ lr.score(X_test, y_test)
 
 len(lr.coef_)
 
-# 簡單運算
+## 簡單運算
 
 import numpy as np
 
@@ -115,7 +115,7 @@ ax.plot_surface(x_surf, y_surf, z_surf, cmap=cm.hot)    # plot a 3d surface plot
 plt.show()
 
 
-# Boston by matrix
+## Boston by matrix
 
 from sklearn import datasets
 ds= datasets.load_boston()
@@ -152,7 +152,7 @@ MSE
 RMSE = MSE ** (1/2)
 RMSE
 
-# R^2 公式
+## R^2 公式
 https://scikit-learn.org/stable/modules/model_evaluation.html#r2-score
 
 y_mean = y_test.ravel().mean()
