@@ -5,4 +5,5 @@
     - file: notebooks
 - file: HW1_房價迴歸預測
 - file: HW2_酒品分類
+- file: HW4_迴歸：Scikit-Learn與矩陣求解的比較
 
